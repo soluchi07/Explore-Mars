@@ -61,7 +61,7 @@ function App() {
       <div id="ban-pane">
         <h2>Banned Cameras</h2>
         {banned && banned.map((tag) => (
-            <div className="tag" key={tag} onClick={() => {removeBan(tag)}}>❌{tag}</div>
+            <div className="tag" key={tag} onClick={() => {removeBan(tag)}}>{tag}</div>
         ))}
       </div>
     </div>
