@@ -1,74 +1,64 @@
-# Web Development Project 4 - *Explore Mars!*
+# Explore Mars! – NASA Rover Photo Explorer
 
-Submitted by: **Soluchi Fidel-Ibeabuchi**
+**Author:** Soluchi Fidel-Ibeabuchi
+**Role:** Developer | Computer Science Student @ Howard University
 
-This web app: **Displays random photos of Mars taken by NASA's rover, Curiosity. Clicking on the button at the button pulls up a new image with information about the rover's launch date, landing date, earth date and the type of camera the photo was taken on.**
+**Explore Mars!** is an interactive web app that pulls **real images from NASA’s Curiosity Rover API**. Users can generate random rover photos, explore metadata (launch date, landing date, Earth date, and camera type), and filter out results dynamically using a custom **ban list feature**.
 
-Time spent: **1.5** hours spent in total
+This project demonstrates my ability to **work with external APIs, handle JSON data dynamically, and implement interactive state-driven UI logic.**
 
-## Required Features
+---
 
-The following **required** functionality is completed: 
+## 🚀 Features
 
-- [x] **Application features a button that creates a new API fetch request on click and displays at least three attributes and an image obtained from the returned JSON data**
-  - The type of attribute displayed for each image should be consistent across API calls (i.e. if you are using a cat API, and display the color, breed, and age in response to an initial API call, subsequent button clicks should also result in the color, breed, and age being displayed)
-- [x] **Only one item/data from API call response is viewable at a time and at least one image is displayed per API call**
-  - A single result of an API call is displayed at a time 
-  - Displayed attributes should match the displayed image (i.e., if showing a picture of a Siamese cat and the attribute breed, the displayed breed should be 'Siamese' not 'Ragdoll' or another breed that doesn't match)
-  - There is at least one image per API call
-- [x] **API call response results should appear random to the user**
-  - Clicking on the API call button should generate a seemingly random new result each time
-  - Note: Repeat results are permitted but the API used should have a reasonably large amount of data and repeats should not be frequent
-- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban **list**
-  - At least one attribute for each API result should be clickable
-  - Clicking on a clickable attribute not on the ban list, should imnmediately add it to the ban list 
-  - Clicking on an attribute in the ban list should immediately remove it from the ban list 
-- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
-  - Clicking on the API call button should not result in any image/attributes with attribute values in the ban list being displayed (ex. Using a cat API, if the ban list includes the value 'Siberian' for the breed attribute, clicking on the Discover button should never result in a Siberian cat being displayed)
-  - Note: More attribute values on the ban list may result in a higher frequency of repeat results
-  -  [x] _To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes_
+### Core Functionality
 
+* **Random Image Fetching:** Each button click fetches a new Curiosity Rover photo with associated attributes.
+* **Dynamic Metadata Display:** Users see consistent metadata (launch date, landing date, Earth date, and camera type) tied to each image.
+* **Ban List Filtering:** Users can click on an attribute to **ban it** (e.g., a specific camera type). Future API results exclude that attribute.
+* **Real-Time Ban Management:** Clicking a banned attribute removes it instantly from the ban list, restoring it to future results.
+* **Single-Result Display:** Only one image/metadata pair is shown at a time for a clean user experience.
 
-The following **optional** features are implemented:
+### Extended Functionality (Future Enhancements)
 
-- [ ] Multiple types of attributes are clickable and can be added to the ban list
-- [ ] Users can see a stored history of their previously displayed  results from this session
-  - A dedicated section of the application displays all the previous images/attributes seen before
-  - Each time the API call button is clicked, the history updates with the newest API result
+* Multiple attributes could be made filterable (e.g., banning both camera types and Earth dates).
+* Session-based history tracking for previously viewed rover images.
 
-The following **additional** features are implemented:
+---
 
-* N/A
+## 🛠️ Tech Stack
 
-## Video Walkthrough
+* **Frontend:** React
+* **Data Source:** NASA Mars Rover Photos API
+* **Visualization & State:** Dynamic JSON parsing, interactive filtering logic
+* **Version Control:** Git/GitHub
 
-Here's a walkthrough of implemented user stories:
+---
 
-<img src='explore-mars.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+## 📸 Demo & Walkthrough
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
+<img src='explore-mars.gif' alt='Explore Mars Walkthrough' />  
 
-[peek](https://github.com/phw/peek) for Linux. -->
+---
 
-## Notes
+## ⚡ Challenges & Learnings
 
-Describe any challenges encountered while building the app.
+* **API Integration:** Learned to work with NASA’s Curiosity Rover API, parsing JSON responses into consistent UI components.
+* **Dynamic Filtering:** Built a ban list system to filter out unwanted attributes in real time, requiring careful state management.
+* **UI/UX Logic:** Designed the app to balance randomness with user control, ensuring new content feels fresh but never breaks user-set rules.
 
-## License
+---
 
-    Copyright 2025 Soluchi Fidel-Ibeabuchi
+## 📚 Key Takeaways
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+* Strengthened skills in **API consumption, JSON handling, and conditional rendering.**
+* Implemented an **interactive filtering system** that demonstrates practical use of dynamic state in web apps.
+* Applied real-world data to build a project that’s both technically sound and engaging.
 
-        http://www.apache.org/licenses/LICENSE-2.0
+---
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+## 📄 License
+
+Apache 2.0 License © 2025 Soluchi Fidel-Ibeabuchi
+
+---
